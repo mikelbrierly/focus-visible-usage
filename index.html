@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="focus.css" />
+  </head>
+  <body>
+    <h1>Semantic :focus-visible usage</h1>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Contact Info</legend>
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="name@example.com"
+            autocomplete="off"
+          />
+          <div>
+            <input id="notif" type="checkbox" />
+            <label for="notif">Send me updates</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Folder</legend>
+          <div>
+            <input type="radio" name="folders" id="alpha" />
+            <label for="alpha">Alpha</label>
+          </div>
+          <div>
+            <input type="radio" id="beta" name="folders" value="beta" />
+            <label for="beta">Beta</label>
+          </div>
+          <div>
+            <input type="radio" id="delta" name="folders" value="delta" />
+            <label for="delta">Delta</label>
+          </div>
+          <div>
+            <input type="radio" id="default" name="folders" value="default" />
+            <label for="default">Default</label>
+          </div>
+        </fieldset>
+        <a href="#">Terms & conditions</a>
+        <input type="submit" value="Submit" />
+      </form>
+      <button class="plus-icon">+</button>
+    </main>
+  </body>
+</html>
